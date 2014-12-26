@@ -73,35 +73,49 @@ hr {
 
 .topbar {
 
-padding: 6px 4px 6px;
 font-weight: normal;
 background: #0275ca;
 color: #FFFFFF;
 border: 1px solid #E5E5E5;
 -webkit-box-shadow: rgba(200, 200, 200, 0.1) 0 1px 1px 1px;
 box-shadow: #e5e5e5 0 0.2px 0 0;
-position: relative;
-vertical-align: baseline;
 display:block;
-margin: 0 auto;
+width: 100%;
 }
 
 .top_innerbar {
-padding: 6px 4px 6px;
 font-weight: normal;
-background: #0275ca;
+background-color: #0275ca;
 color: #FFFFFF;
-position: relative;
-vertical-align: baseline;
-width: 880px;
-display:block;
+height: 60px;
+position: fixed;
 margin: 0 auto;
+left: 0;
+right: 0;
+opacity: 0.6;
+filter: alpha(opacity=60);
+}
+
+.top_inner_innerbar {
+font-weight: normal;
+background-color: #0275ca;
+color: #FFFFFF;
+height: 60px;
+position: fixed;
+margin: 0 auto;
+left: 0;
+right: 0;
 }
 
 ul.list li{
   width: auto;
   float: right;
   list-style:none;
+}
+
+ul.list li a {
+color: white;
+text-decoration: none;
 }
 
 .box2 {
@@ -185,7 +199,9 @@ font-weight: bold;
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
 					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					$('html,body').animate({scrollTop:$(this.hash).offset
+
+().top},1000);
 				});
 			});
 		</script>
@@ -193,11 +209,20 @@ font-weight: bold;
 </head>
 <body>
 
-<div class="topbar" style="height:500px;">
-            <div class="top_innerbar">
-                <ul class="list"><li style="font-family:Calibri;padding:10px;">Sign up</li><li style="font-family:Calibri;padding:10px;"><a href="#about" class="scroll">Login</a></li><li style="float:left;font-family:Calibri; font-size:larger;">Ubrand</li></ul>
+
+<div class="topbar" style="height:500px; ">
+
+<div class="top_inner_innerbar">
+            <div class="top_inner_innerbar" style="width: 880px;">
+                <ul class="list" style="padding:10px;"><li style="font-family:Calibri; padding-left:10px;">Sign 
+
+up</li><li style="font-family:Calibri;"><a href="#about" class="scroll">Login</a></li><li 
+
+style="float:left;font-family:Calibri; ">Ubrand</li></ul>
                 <br />
+
             </div>
+</div>
         </div> 
 
 
@@ -212,9 +237,13 @@ font-weight: bold;
     
 
 
-    <h1 style="font-weight:bold"><font style="color:red">U</font><font style="color:#464646">brand</font></h1>
+    <h1 style="font-weight:bold"><font style="color:red">U</font><font 
+
+style="color:#464646">brand</font></h1>
     
- <p style="font-family:Calibri;font-weight:bold;">Welcome to the new generation of User-brand interaction</p>
+ <p style="font-family:Calibri;font-weight:bold;">Welcome to the new generation of User-brand 
+
+interaction</p>
     
     <hr />
 
@@ -222,21 +251,39 @@ font-weight: bold;
 
     Hi Abbas,
     <br /><br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We were glad to meet you and would like propose a free trial run for the Ubrand app for upto a month. 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We were glad to 
+
+meet you and would like propose a free trial run for the Ubrand app for upto a month. 
         We are getting a huge traction in Hyderabad as well as good responses. 
         We hope that you will love the app.
         <br /><br />
 <b style="color:#009900;">About Ubrand</b>:<br /><br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ubrand aims to provide solutions to bring brands and consumers closer to each other.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ubrand aims to provide 
+
+solutions to bring brands and consumers closer to each other.
 These solutions can be as simple as a “tap what you like” or “hot-or-not” game. 
-We tried to apply gamification to increase interaction between users and brands while they are at the billing counter.
+We tried to apply gamification to increase interaction between users and brands while they are at the billing 
+
+counter.
         <br /><br />
-After this product won Startup Weekend Hyderabad, it went on to become a finalist (Top-14) in Global Startup Weekend, San Fransisco. The only Indian team to reach till there.
+After this product won Startup Weekend Hyderabad, it went on to become a finalist (Top-14) in Global Startup 
+
+Weekend, San Fransisco. The only Indian team to reach till there.
 We also let people play this game in some famous malls and all of them simply loved the game. 
         <br /><br />
-The most interesting thing is, in no more than 30 seconds per customer, this game collects <b style="color:#000000;">96000 opinions</b> about different products <b style="color:#000000;">in just one month</b> of use, assuming it is installed in just 10 stores and only 20 customers per day use it per day. This data can be useful to brands for variety of purposes like forecasting their sales, inventory management, most importantly which products consumers like or don’t like, other than the ones they have already purchased. 
+The most interesting thing is, in no more than 30 seconds per customer, this game collects <b 
+
+style="color:#000000;">96000 opinions</b> about different products <b style="color:#000000;">in just one 
+
+month</b> of use, assuming it is installed in just 10 stores and only 20 customers per day use it per day. This 
+
+data can be useful to brands for variety of purposes like forecasting their sales, inventory management, most 
+
+importantly which products consumers like or don’t like, other than the ones they have already purchased. 
         <br /><br />
-At the same time, this simple game exposes 16 different products in a matter of just 30 seconds to a consumer while he/she is playing it. 
+At the same time, this simple game exposes 16 different products in a matter of just 30 seconds to a 
+
+consumer while he/she is playing it. 
         <br /><br />   
 You can simply visit <a href="http://www.ubrandapp.com">www.ubrandapp.com</a> to know more
 
@@ -258,7 +305,7 @@ You can simply visit <a href="http://www.ubrandapp.com">www.ubrandapp.com</a> to
 <br /><br />
 
 
-<div class="bgdiv" style="background: url(images/skill-bg.jpg)no-repeat;">
+<div class="bgdiv" style="background: url(images/skill-bg1.jpg)no-repeat;">
 <center>
 	<div class="blog">
 
